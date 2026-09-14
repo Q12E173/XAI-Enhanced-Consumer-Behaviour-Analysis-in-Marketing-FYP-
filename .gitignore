@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Dataset
+data/*.csv
+data/*.tsv
+data/*.json
+
+# Trained models
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# Hugging Face cache
+.cache/
+huggingface/
