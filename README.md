@@ -330,20 +330,27 @@ returning a sentiment label.
 
 ## How to Run
 
-The notebooks were developed and executed in a GPU-enabled environment.
+The notebooks were developed and executed in a GPU-enabled environment,
+primarily using Kaggle Notebook.
 
 The original Amazon US Customer Reviews Dataset is not included in this
 repository. The dataset must be obtained separately before running the
 notebooks.
 
-The notebooks are organised according to the model development process:
+Before running the notebooks:
 
-1. CNN baseline
-2. BERT 3-label classification
-3. RoBERTa 3-label classification
-4. BERT fine-tuning
-5. RoBERTa fine-tuning
-6. Stacked ensemble and SHAP analysis
+1. Obtain the Amazon US Customer Reviews Dataset.
+2. Place the dataset in the appropriate directory or update the dataset
+   path in the notebook.
+3. Install the required Python dependencies listed in `requirements.txt`.
+4. Run the notebooks in the following order:
+
+   1. CNN 3 Labels
+   2. BERT 3 Labels
+   3. RoBERTa 3 Labels
+   4. BERT fine-tuning 
+   5. RoBERTa fine-tuning
+   6. Stacked ensemble and SHAP analysis
 
 ---
 
