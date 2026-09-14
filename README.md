@@ -363,36 +363,20 @@ XAI-Enhanced-Consumer-Behaviour-Analysis/
 
 ## How to Run
 
-### 1. Clone the repository
+The notebooks were developed and executed in a GPU-enabled environment.
 
-```bash
-git clone https://github.com/<your-username>/XAI-Enhanced-Consumer-Behaviour-Analysis.git
-cd XAI-Enhanced-Consumer-Behaviour-Analysis
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Download the dataset
-
-Obtain the Amazon US Customer Reviews Dataset and place the required
-Personal Care Appliances dataset in the appropriate local data directory.
-
-### 4. Run the notebooks
+The original Amazon US Customer Reviews Dataset is not included in this
+repository. The dataset must be obtained separately before running the
+notebooks.
 
 The notebooks are organised according to the model development process:
 
-```text
-01 → CNN baseline
-02 → BERT 3-label classification
-03 → RoBERTa 3-label classification
-04 → BERT fine-tuning
-05 → RoBERTa fine-tuning
-06 → Stacked ensemble + SHAP
-```
+1. CNN baseline
+2. BERT 3-label classification
+3. RoBERTa 3-label classification
+4. BERT fine-tuning
+5. RoBERTa fine-tuning
+6. Stacked ensemble and SHAP analysis
 
 ---
 
