@@ -103,35 +103,28 @@ The best-performing configurations were selected for the final ensemble.
 
 ### 3. Stacked Ensemble
 
-The best BERT and RoBERTa models were combined using a stacked ensemble.
+The best-performing BERT and RoBERTa models were combined using a
+stacked ensemble approach.
 
-The architecture is:
+#### Overall Project Architecture
 
-```text
-                   Input Review
-                       │
-             ┌─────────┴─────────┐
-             │                   │
-          BERT 1             RoBERTa 2
-             │                   │
-       Softmax Prob.        Softmax Prob.
-             │                   │
-             └─────────┬─────────┘
-                       │
-              Concatenated Features
-                       │
-             Logistic Regression
-               Meta-Classifier
-                       │
-                       ▼
-             Final Sentiment
-              Prediction
-```
+<img width="337" height="545" alt="image" src="https://github.com/user-attachments/assets/021515fd-ebee-42cd-b614-6f2e4837916c" />
 
-The two Transformer models generate probability distributions for the
-Positive and Negative classes. These probabilities are concatenated
-into a four-dimensional feature vector and passed to a Logistic
-Regression meta-classifier.
+The overall framework consists of data acquisition, data preprocessing,
+initial multi-class classification, Transformer fine-tuning, stacked
+ensemble learning, model evaluation, and SHAP-based explainability.
+
+#### Stacked Ensemble Architecture
+
+<img width="686" height="195" alt="image" src="https://github.com/user-attachments/assets/13242c51-660f-4934-826e-4b90ce06e170" />
+
+The final ensemble combines the outputs of the fine-tuned BERT and
+RoBERTa models. Each Transformer model generates softmax probability
+distributions for the Negative and Positive classes.
+
+The resulting probabilities are concatenated into a four-dimensional
+feature vector and passed to a Logistic Regression meta-classifier,
+which produces the final sentiment prediction.
 
 ---
 
