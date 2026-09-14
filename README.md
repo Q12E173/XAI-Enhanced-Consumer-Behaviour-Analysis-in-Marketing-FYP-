@@ -328,39 +328,6 @@ returning a sentiment label.
 
 ---
 
-## Repository Structure
-
-```text
-XAI-Enhanced-Consumer-Behaviour-Analysis/
-│
-├── README.md
-│
-├── notebooks/
-│   ├── 01_CNN_Baseline_3_Labels.ipynb
-│   ├── 02_BERT_3_Labels.ipynb
-│   ├── 03_RoBERTa_3_Labels.ipynb
-│   ├── 04_BERT_FineTuning_BERT1.ipynb
-│   ├── 05_RoBERTa_FineTuning_RoBERTa2.ipynb
-│   └── 06_Stacked_Ensemble_SHAP.ipynb
-│
-├── results/
-│   ├── model_comparison.png
-│   ├── ensemble_confusion_matrix.png
-│   ├── shap_summary.png
-│   ├── shap_beeswarm.png
-│   ├── shap_heatmap.png
-│   └── shap_waterfall.png
-│
-├── data/
-│   └── README.md
-│
-├── requirements.txt
-│
-└── .gitignore
-```
-
----
-
 ## How to Run
 
 The notebooks were developed and executed in a GPU-enabled environment.
